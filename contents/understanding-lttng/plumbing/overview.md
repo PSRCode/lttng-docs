@@ -22,7 +22,7 @@ which usable component belongs to which package:
       and `liblttng-ust-dl`)
     * user space tracepoint code generator command line tool
       (`lttng-gen-tp`)
-    * Java Util Logging tracepoint provider (`liblttng-ust-jul-jni`)
+    * `java.util.logging` tracepoint provider (`liblttng-ust-jul-jni`)
       and JAR file (`liblttng-ust-jul.jar`)
   * **LTTng-modules**:
     * LTTng Linux kernel tracer module

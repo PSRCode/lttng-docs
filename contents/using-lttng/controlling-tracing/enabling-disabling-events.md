@@ -12,7 +12,7 @@ in source code/binary program, logical processor and time capturing
 some payload) being recorded as trace data. This specific condition is
 composed of:
 
-  1. A **domain** (kernel, user space or Java Util Logging) (required).
+  1. A **domain** (kernel, user space or `java.util.logging`) (required).
   2. One or many **instrumentation points** in source code or binary
      program (tracepoint name, address, symbol name, function name,
      logger name, etc.) to be executed (required).
@@ -28,7 +28,7 @@ All conditions are specified using arguments passed to the
 
 Condition 1 is specified using either `--kernel/-k` (kernel),
 `--userspace/-u` (user space) or `--jul/-j`
-(<abbr title="Java Util Logging">JUL</abbr>). Exactly one of those
+(<abbr title="java.util.logging">JUL</abbr>). Exactly one of those
 three arguments must be specified.
 
 Condition 2 is specified using one of:

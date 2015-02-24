@@ -3,7 +3,8 @@ id: java-application
 ---
 
 LTTng-UST provides a _logging_ back-end for Java applications using
-<a href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html" class="ext">Java Util Logging</a> (JUL). This back-end is called the _LTTng-UST JUL agent_ and is
+<a href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html" class="ext"><code>java.util.logging</code></a>
+(JUL). This back-end is called the _LTTng-UST JUL agent_ and is
 responsible for communications with an LTTng session daemon.
 
 From the user's point of view, once the LTTng-UST JUL agent has been

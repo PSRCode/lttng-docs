@@ -9,7 +9,7 @@ There are currently three known domains:
 
   * Linux kernel
   * user space
-  * Java Util Logging (JUL)
+  * `java.util.logging` (JUL)
 
 Different tracers expose common features in their own interfaces, but,
 from a user's perspective, you still need to target a specific type of
