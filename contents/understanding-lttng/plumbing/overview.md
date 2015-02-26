@@ -36,8 +36,8 @@ shown running on a remote system, although it could as well run on the
 target (monitored) system.
 
 <div class="img img-90">
-    <object data="/images/docs/plumbing.svg" type="image/svg+xml">
-        <img src="/images/docs/plumbing.svg">
+    <object data="/images/docs25/plumbing.svg" type="image/svg+xml">
+        <img src="/images/docs25/plumbing.svg">
     </object>
 </div>
 
