@@ -32,3 +32,6 @@ devices, file descriptors, and file modes, as well as
 <a href="http://en.wikipedia.org/wiki/Video4Linux" class="ext">V4L2</a>
 events. Linux 3.15 is now officially supported, and system call tracing
 is now possible on the MIPS32 architecture.
+
+To learn more about the new features of LTTng 2.5, see
+[this release announcement](//lttng.org/blog/2014/08/04/lttng-toolchain-2-5-0-is-out/).
