@@ -24,11 +24,11 @@ an object file (along with a `.c` file) and a header to be included in our appli
 
 Here's the whole flow:
 
-<div class="img img-80">
+<figure class="img img-80">
     <object data="/images/docs25/lttng-lttng-gen-tp.svg" type="image/svg+xml">
         <img src="/images/docs25/lttng-lttng-gen-tp.svg">
     </object>
-</div>
+</figure>
 
 The template file format is a list of tracepoint definitions
 and other optional definition entries which we will skip for

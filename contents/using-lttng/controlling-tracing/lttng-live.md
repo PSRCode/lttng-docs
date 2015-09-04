@@ -18,11 +18,11 @@ remote) consumer daemon, a _tee_ may be created: trace data will be
 recorded to trace files _as well as_ being transmitted to a
 connected live viewer:
 
-<div class="img img-90">
+<figure class="img img-90">
     <object data="/images/docs25/lttng-live-relayd.svg" type="image/svg+xml">
         <img src="/images/docs25/lttng-live-relayd.svg">
     </object>
-</div>
+</figure>
 
 In order to use this feature, a tracing session must created in live
 mode on the target system:
