@@ -27,4 +27,4 @@ with humans as it used to do, but also with machines thanks to its new
 [machine interface](#doc-mi) feature.
 
 To learn more about the new features of LTTng 2.6, see
-[the release announcement](//lttng.org/blog/2015/02/27/lttng-2.6-released/).
+<a href="//lttng.org/blog/2015/02/27/lttng-2.6-released/" class="ext">the release announcement</a>.

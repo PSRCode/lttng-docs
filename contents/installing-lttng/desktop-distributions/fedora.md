@@ -31,10 +31,10 @@ sudo make modules_install
 <div class="tip">
 <p>
   <span class="t">Note:</span> If you need to trace
-  <a href="#doc-java-application">Java applications</a> on
+  <a href="#doc-java-application" class="int">Java applications</a> on
   Fedora, you need to build and install LTTng-UST 2.6
-  <a href="#doc-building-from-source">from source</a> and use the
-  <code>--enable-java-agent-jul</code>,
+  <a href="#doc-building-from-source" class="int">from source</a> and
+  use the <code>--enable-java-agent-jul</code>,
   <code>--enable-java-agent-log4j</code>, or
   <code>--enable-java-agent-all</code> options.
 </p>

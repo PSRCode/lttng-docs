@@ -19,7 +19,7 @@ sudo apt-get install liblttng-ust-dev
 </pre>
 
 If you need to trace
-<a href="#doc-java-application">Java applications</a>,
+[Java applications](#doc-java-application),
 you need to install the LTTng-UST Java agent also:
 
 <pre class="term">
