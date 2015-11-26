@@ -18,8 +18,8 @@ id: preface
     <p>
         <span class="t">Warning:</span>This version of the LTTng documentation
         is <strong>not maintained anymore</strong>, since the corresponding
-        version of LTTng is not the current stable release, nor the current
-        legacy release.
+        version of LTTng is not the current stable release, nor the
+        previous stable release.
     </p>
     <p>
         Visit the <a href="/docs">latest LTTng documentation version</a>.
