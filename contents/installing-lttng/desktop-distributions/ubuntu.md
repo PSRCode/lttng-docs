@@ -18,8 +18,9 @@ sudo apt-get install lttng-modules-dkms
 sudo apt-get install liblttng-ust-dev
 </pre>
 
-If you need to trace Java applications, you need to install the
-LTTng-UST Java agent also:
+If you need to trace
+<a href="#doc-java-application">Java applications</a>,
+you need to install the LTTng-UST Java agent also:
 
 <pre class="term">
 sudo apt-get install liblttng-ust-agent-java
