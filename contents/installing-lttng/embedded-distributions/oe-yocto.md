@@ -2,8 +2,10 @@
 id: oe-yocto
 ---
 
-LTTng recipes are available in the
-<code><a href="http://layers.openembedded.org/layerindex/branch/master/layer/openembedded-core/" class="ext">openembedded-core</a></code> layer of OpenEmbedded:
+LTTng 2.6 recipes are available in the
+<code><a href="http://layers.openembedded.org/layerindex/branch/master/layer/openembedded-core/" class="ext">openembedded-core</a></code>
+layer of OpenEmbedded since February 8th, 2015 under the following
+names:
 
   * `lttng-tools`
   * `lttng-modules`
