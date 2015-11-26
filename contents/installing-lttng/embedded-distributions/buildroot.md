@@ -2,8 +2,8 @@
 id: buildroot
 ---
 
-LTTng packages in Buildroot are `lttng-tools`, `lttng-modules` and
-`lttng-libust`.
+LTTng 2.5 packages in Buildroot 2014.11 and 2015.02 are named
+`lttng-tools`, `lttng-modules`, and `lttng-libust`.
 
 To enable them, start the Buildroot configuration menu as usual:
 
