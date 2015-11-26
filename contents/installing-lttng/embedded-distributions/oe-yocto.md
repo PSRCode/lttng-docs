@@ -22,3 +22,14 @@ IMAGE_INSTALL_append = " lttng-tools lttng-modules lttng-ust"
 If you're using Hob, click _Edit image recipe_ once you have selected
 a machine and an image recipe. Then, under the _All recipes_ tab, search
 for `lttng` and include the three LTTng recipes.
+
+<div class="tip">
+<p>
+  <span class="t">Note:</span> If you need to trace Java applications on
+  OpenEmbedded/Yocto, you need to build and install LTTng-UST 2.6
+  <a href="#doc-building-from-source">from source</a> and use the
+  <code>--enable-java-agent-jul</code>,
+  <code>--enable-java-agent-log4j</code>, or
+  <code>--enable-java-agent-all</code> options.
+</p>
+</div>

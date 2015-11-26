@@ -21,3 +21,14 @@ In:
 In _Target packages_/_Debugging, profiling and benchmark_, enable
 _lttng-modules_ and _lttng-tools_. In
 _Target packages_/_Libraries_/_Other_, enable _lttng-libust_.
+
+<div class="tip">
+<p>
+  <span class="t">Note:</span> If you need to trace Java applications on
+  Buildroot, you need to build and install LTTng-UST 2.6
+  <a href="#doc-building-from-source">from source</a> and use the
+  <code>--enable-java-agent-jul</code>,
+  <code>--enable-java-agent-log4j</code>, or
+  <code>--enable-java-agent-all</code> options.
+</p>
+</div>

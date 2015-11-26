@@ -27,3 +27,14 @@ install it as follows:
 KERNELDIR=/usr/src/kernels/$(uname -r) make
 sudo make modules_install
 </pre>
+
+<div class="tip">
+<p>
+  <span class="t">Note:</span> If you need to trace Java applications on
+  Fedora, you need to build and install LTTng-UST 2.6
+  <a href="#doc-building-from-source">from source</a> and use the
+  <code>--enable-java-agent-jul</code>,
+  <code>--enable-java-agent-log4j</code>, or
+  <code>--enable-java-agent-all</code> options.
+</p>
+</div>
