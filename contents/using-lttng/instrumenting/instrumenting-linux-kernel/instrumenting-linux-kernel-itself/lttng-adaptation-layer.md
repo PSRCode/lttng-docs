@@ -25,8 +25,8 @@ Following our `hello_world` event example, here's the content of
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM hello
 
-#if !defined(_TRACE_HELLO_H) || defined(TRACE_HEADER_MULTI_READ)
-#define _TRACE_HELLO_H
+#if !defined(_LTTNG_HELLO_H) || defined(TRACE_HEADER_MULTI_READ)
+#define _LTTNG_HELLO_H
 
 #include "../../../probes/lttng-tracepoint-event.h"
 #include <linux/tracepoint.h>
@@ -34,41 +34,22 @@ Following our `hello_world` event example, here's the content of
 LTTNG_TRACEPOINT_EVENT(
     /* format identical to mainline version for those */
     hello_world,
-    TP_PROTO(int foo, const char* bar),
+    TP_PROTO(int foo, const char *bar),
     TP_ARGS(foo, bar),
 
-    /* possible differences */
-    TP_STRUCT__entry(
-        __field(int, my_int)
-        __field(char, char0)
-        __field(char, char1)
-        __string(product, bar)
-    ),
-
-    /* notice the use of tp_assign()/tp_strcpy() and no semicolons */
-    TP_fast_assign(
-        tp_assign(my_int, foo)
-        tp_assign(char0, bar[0])
-        tp_assign(char1, bar[1])
-        tp_strcpy(product, bar)
-    ),
-
-    /* This one is actually not used by LTTng either, but must be
-     * present for the moment.
-     */
-    TP_printk("", 0)
-
-/* no semicolon after this either */
+    TP_FIELDS(
+        ctf_integer(int, foo_field, foo)
+        ctf_string(bar_field, bar)
+    )
 )
 
-#endif
+#endif /* !defined(_LTTNG_HELLO_H) || defined(TRACE_HEADER_MULTI_READ) */
 
 /* other difference: do NOT include <trace/define_trace.h> */
 #include "../../../probes/define_trace.h"
 ~~~
 
-Some possible entries for `TP_STRUCT__entry()` and `TP_fast_assign()`,
-in the case of LTTng-modules, are shown in the
+Some possible entries for `TP_FIELDS()` are shown in the
 [LTTng-modules reference](#doc-lttng-modules-ref) section.
 
 The best way to learn how to use the above macros is to inspect
@@ -84,7 +65,8 @@ in `probes`. You may always use the following template:
 #include <linux/module.h>
 #include "../lttng-tracer.h"
 
-/* Build time verification of mismatch between mainline TRACE_EVENT()
+/*
+ * Build-time verification of mismatch between mainline TRACE_EVENT()
  * arguments and LTTng adaptation layer LTTNG_TRACEPOINT_EVENT() arguments.
  */
 #include <trace/events/hello.h>
