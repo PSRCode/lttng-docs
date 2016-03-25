@@ -214,6 +214,7 @@ consistent as possible:
   * Use _use case_, not _use-case_ nor _usecase_.
   * Use _the C standard library_, not _libc_.
   * Use _log level_, not _loglevel_.
+  * Use _man page_, not _manpage_.
   * Use complete LTTng project names: _LTTng-modules_, _LTTng-UST_ and
     _LTTng-tools_, not _modules_, _UST_ and _tools_.
   * All code snippets should use 4 spaces for indentation (even C)

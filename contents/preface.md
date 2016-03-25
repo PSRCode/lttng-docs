@@ -114,7 +114,7 @@ as linear as possible.
      using the `lttng` command line tool and miscellaneous practical use
      cases.
   6. [Reference](#doc-reference) contains references of LTTng components,
-     like links to online manpages and various APIs.
+     like links to online man pages and various APIs.
 
 We recommend that you read the above chapters in this order, although
 some of them may be skipped depending on your situation. You may skip
