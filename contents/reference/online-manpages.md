@@ -2,8 +2,8 @@
 id: online-lttng-manpages
 ---
 
-LTTng packages currently install the following manpages, available
-online using the links below:
+LTTng packages currently install the following [man pages](/man),
+available online using the links below:
 
   * **LTTng-tools**
     * <a href="/man/1/lttng/v2.5" class="ext">`lttng`</a>
